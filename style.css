@@ -19,7 +19,7 @@ header {
     height: 100vh;
     width: 100%;
     position: relative;
-    background-image: url('/image/banner-image.png');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 2.5), rgba(0, 0, 0, 0)), url('banner-image.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -59,5 +59,56 @@ header {
 main {
     height: 100vh;
     width: 100%;
-    background-color: black;
+    /* background-color: rgb(211, 96, 96); */
+}
+
+.maincontent {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-img img {
+    height: 500px;
+    width: 800px;
+}
+
+.container-text h1,
+h3,
+p {
+    display: flex;
+    font-family: inter;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-text h1 {
+    color: #F00;
+    text-align: center;
+    font-family: Inter;
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.container-text p{
+    color: #F00;
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.container-text h3{
+    color: #070211;
+
+text-align: center;
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 }
